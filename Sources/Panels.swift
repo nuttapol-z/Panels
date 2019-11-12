@@ -11,7 +11,7 @@ public class Panels {
         return (panelHeightConstraint?.constant ?? 0.0) > configuration.visibleArea()
     }
 
-    private weak var panel: (Panelable & UIViewController)?
+    public weak var panel: (Panelable & UIViewController)?
     private weak var parentViewController: UIViewController?
     private weak var containerView: UIView?
     private weak var panelHeightConstraint: NSLayoutConstraint?
